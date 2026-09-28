@@ -1,0 +1,14 @@
+POWER BI QUICKSTART
+
+1. Import hourly_kpis.csv.
+2. Ensure hour is Date/Time and numeric fields are numeric (use locale if needed).
+3. Create Date = DATE(YEAR([hour]), MONTH([hour]), DAY([hour])) if you want a clean date slicer.
+4. Recommended visuals:
+   - line chart: hour vs avg_cycle_time_sec, legend = machine_id
+   - line chart: hour vs error_rate, legend = machine_id
+   - bar chart: machine_id vs SUM(errors)
+   - cards: SUM(operations), SUM(errors), SUM(downtime_minutes)
+5. Slicers: Date, zone, machine_id.
+6. Do not use AVERAGE(error_rate) as the overall rate. Prefer SUM(errors) / SUM(operations).
+7. Use peaks to generate candidates; confirm candidates systematically in SQL.
+8. Import event_log.csv and compare event times with KPI deterioration/recovery.
