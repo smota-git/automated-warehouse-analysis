@@ -93,7 +93,6 @@ Use SQL for systematic screening, candidate ranking, and drill-down. Use Power B
 
 ## Power BI dashboard screenshot
 
-```markdown
 ![Power BI dashboard](images/dashboard.png)
-```
+
 
