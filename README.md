@@ -24,6 +24,7 @@ These files are part of the repository and exist before the generator is run:
 - `POWER_BI_quickstart.txt` - short Power BI setup notes
 - `requirements.txt` - Python dependencies
 - `README.md` - project documentation
+- 'LICENSE' — project license
 
 ## Generated files
 
